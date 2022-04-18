@@ -77,30 +77,7 @@ function search(){
      }
 
 
-
  }
-        
-    
-    
-   
-    /*for(let i = 0; i < 6; i++){
-        //for (let j = 0; j < data[i].name.length; j++){
-          // if (letras[j] === data[i].name[j] ) {
-            //div.innerHTML += "\n\n" +data[i].name;
-        //}
-
-    } */
-
-
-   
-    
-
-
-
-
-
-
-
 
 
 /**
