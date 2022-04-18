@@ -10,6 +10,11 @@ function background(){
      * alterar o background do body para a cor #BECCC3.
      */
 
+    let fundo = document.getElementById("body");
+    fundo.style.backgroundColor = "#BECCC3";
+
+
+
 }
 
 /**
@@ -25,6 +30,10 @@ function show(){
       * Recupera os valores dos campos de texto cujo o id='fname' e id='lname' e apresente o nome
       * e o sobrenome de uma pessoa (separado por um espaço) na div id='result'
       */
+    let nome = document.getElementById("fname").value;
+    let sobrenome = document.getElementById("lname").value;
+    let div = document.getElementById("result");
+    div.innerHTML = nome + " " + sobrenome;
 }
 
 /**
@@ -51,14 +60,59 @@ function search(){
      *
      * Além disso, a função removeAllChildren abaixo também pode ser útil para o desenvolvimento da solução
      */
+    
+    let nome = document.getElementById("name").value.toUpperCase();
+    let lista = document.getElementById("search");
+     if(nome ==""){
+         for(let i = 0; i < data.length; i++){
+          lista.innerHTML=  "<div>"+ data[i].name + "</div>"
+         }
+     }
 
-}
+     lista.innerHTML = "";
+     for(let i = 0; i < data.length;i++){
+         if(nome==data[i].name.substr(0, nome.length).toUpperCase()){
+            lista.innerHTML+= "<div>"+ data[i].name + "</div>";
+         }
+     }
+
+
+
+ }
+        
+    
+    
+   
+    /*for(let i = 0; i < 6; i++){
+        //for (let j = 0; j < data[i].name.length; j++){
+          // if (letras[j] === data[i].name[j] ) {
+            //div.innerHTML += "\n\n" +data[i].name;
+        //}
+
+    } */
+
+
+   
+    
+
+
+
+
+
+
+
+
 
 /**
  * Remove todos os filhos de um nó
  *
  * @param {*} node Um objeto HTML Node
  */
+
+function lerDados(){
+
+}
+
 function removeAllChildren(node){
     while (node.hasChildNodes()) {
         node.removeChild(node.firstChild);
