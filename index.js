@@ -86,9 +86,6 @@ function search(){
  * @param {*} node Um objeto HTML Node
  */
 
-function lerDados(){
-
-}
 
 function removeAllChildren(node){
     while (node.hasChildNodes()) {
