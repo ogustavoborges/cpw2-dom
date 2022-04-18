@@ -13,8 +13,6 @@ function background(){
     let fundo = document.getElementById("body");
     fundo.style.backgroundColor = "#BECCC3";
 
-
-
 }
 
 /**
@@ -65,7 +63,7 @@ function search(){
     let lista = document.getElementById("search");
      if(nome ==""){
          for(let i = 0; i < data.length; i++){
-          lista.innerHTML=  "<div>"+ data[i].name + "</div>"
+          lista.innerHTML=  "<div>"+ data[i].name + "</div>";
          }
      }
 
