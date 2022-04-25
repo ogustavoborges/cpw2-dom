@@ -61,19 +61,14 @@ function search(){
     
     let nome = document.getElementById("name").value.toUpperCase();
     let lista = document.getElementById("search");
-     if(nome ==""){
-         for(let i = 0; i < data.length; i++){
-          lista.innerHTML=  "<div>"+ data[i].name + "</div>";
-         }
-     }
+  
 
      lista.innerHTML = "";
      for(let i = 0; i < data.length;i++){
          if(nome==data[i].name.substr(0, nome.length).toUpperCase()){
-            lista.innerHTML+= "<div>"+ data[i].name + "</div>";
+            lista.innerHTML+=  data[i].name + "<br>";
          }
      }
-
 
  }
 
